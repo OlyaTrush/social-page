@@ -56,10 +56,10 @@ export const LoginScreen = ({navigation}) => {
 
   const onLogin = () => {
     if (!email.trim() || !password.trim()) {
-      Alert.alert(`All fields must be completed!`);
+      Alert.alert(`Please, fulfill all fields!`);
       return;
     }
-    Alert.alert(`Welcome, ${email}!`);
+    Alert.alert(`Welcome`);
     console.log(email, password);
     setEmail("");
     setPassword("");

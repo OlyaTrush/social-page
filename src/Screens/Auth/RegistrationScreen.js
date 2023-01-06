@@ -60,10 +60,10 @@ export const RegistrationScreen = ({ navigation }) => {
 
   const onLogin = () => {
     if (!login.trim() || !email.trim() || !password.trim()) {
-      Alert.alert(`All fields must be completed!`);
+      Alert.alert(`Please, fulfill all fields!`);
       return;
     }
-    Alert.alert(`Welcome ${login}, your registration is successfull!`);
+    Alert.alert(`Welcome ${login}!`);
     console.log(login, email, password);
     setLogin("");
     setEmail("");
